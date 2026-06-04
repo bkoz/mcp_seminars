@@ -14,9 +14,9 @@ Both implementations fetch the same stock quote data, making it easy to compare 
 
 ## Architecture Comparison
 
-![Architecture Diagram](docs/architecture-comparison.excalidraw)
+![Architecture Diagram](docs/architecture-comparison.png)
 
-**Visual comparison:** Open `docs/architecture-comparison.excalidraw` at [excalidraw.com](https://excalidraw.com) to see the side-by-side architecture diagrams.
+**Visual comparison:** Side-by-side architecture diagrams showing REST (blue) vs MCP (green) approaches.
 
 | Aspect | REST Approach | MCP Approach |
 |--------|--------------|--------------|

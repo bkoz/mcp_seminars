@@ -20,7 +20,7 @@ Both implementations fetch the same stock quote data, making it easy to compare 
 
 | Aspect | REST Approach | MCP Approach |
 |--------|--------------|--------------|
-| **Communication** | Direct HTTP GET requests | JSON-RPC over stdio/SSE |
+| **Communication** | Direct HTTP GET requests | JSON-RPC over http |
 | **Abstraction** | Minimal - direct endpoint calls | Protocol layer + plugin interface |
 | **State** | Stateless - each request independent | Stateful session with MCP server |
 | **Coupling** | Tightly coupled to Alpha Vantage API | Loosely coupled via plugin interface |
@@ -90,7 +90,7 @@ python main.py IBM
 ```
 
 This will:
-1. Connect to the Alpha Vantage MCP server via stdio
+1. Connect to the Alpha Vantage MCP server via http
 2. Call the `get_quote` tool through MCP protocol
 3. Display the same stock quote data
 
